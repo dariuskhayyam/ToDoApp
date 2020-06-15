@@ -1,0 +1,12 @@
+body{
+    background-color: red;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
+
+

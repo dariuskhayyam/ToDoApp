@@ -5,9 +5,9 @@ function CheckList(){
     return(
         <div>
 
-          <ToDoItem />
-          <ToDoItem />
-          <ToDoItem />
+          <ToDoItem item="Tell Shali you love her"/>
+          <ToDoItem item="Give Shali ALL the hugs"/>
+          <ToDoItem item="Eat that pussy all day long 🤤"/>
 
 
         </div>

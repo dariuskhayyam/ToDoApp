@@ -1,17 +1,20 @@
 import React from "react"
 import ToDoItem from "./ToDoItem"
+import ToDoData from "./ToDoData"
 
-function CheckList(){
-    return(
-        <div>
+class CheckList extends React.Component{
+  
+  render(){
+  let data = ToDoData.map(item => <ToDoItem item={item}/>)
 
-          <ToDoItem item="Tell Shali you love her"/>
-          <ToDoItem item="Give Shali ALL the hugs"/>
-          <ToDoItem item="Eat that pussy all day long 🤤"/>
+  return(
+      <div>
 
+      {data}
 
-        </div>
-    )
+      </div>
+  )
+  }
 }
 
 export default CheckList

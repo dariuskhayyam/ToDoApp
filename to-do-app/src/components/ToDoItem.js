@@ -31,14 +31,16 @@ const box2 ={
     justifyContent:"flex-start",
 }
 
-function ToDoItem(props){
-    return(
-        <span style={styles}>
-        <span style={box2}><input type = "checkbox" style={check} id="in"></input></span>
-        <span style={box}><label for="id" style={label}>{props.item}</label> </span>
-        <br />
-        </span>
-    )
+class ToDoItem extends React.Component{
+    render(){
+        return(
+            <span style={styles}>
+            <span style={box2}><input type = "checkbox" style={check} id="in"></input></span>
+            <span style={box}><label for="id" style={label}>{this.props.item.text}</label> </span>
+            <br />
+            </span>
+        )
+    }
 }
 
 export default ToDoItem

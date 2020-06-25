@@ -3,9 +3,16 @@ import ToDoItem from "./ToDoItem"
 import ToDoData from "./ToDoData"
 
 class CheckList extends React.Component{
+
+  constructor(){
+    super()
+    this.state = {
+      ToDos : ToDoData
+    }
+  }
   
   render(){
-  let data = ToDoData.map(item => <ToDoItem item={item}/>)
+  let data = this.state.ToDos.map(item => <ToDoItem item={item}/>)
 
   return(
       <div>
